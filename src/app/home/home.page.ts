@@ -102,7 +102,6 @@ export class HomePage {
   }
 
  cropimage(imageurl){
- const img = document.URL.includes(imageurl);
    this.crop.crop(imageurl,   this.imageOptions).then((crop)=>{
     console.log('Cropped Image:', crop);
     console.log('Cropped Image02:', crop.split('?')[0]);
